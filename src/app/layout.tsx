@@ -30,7 +30,7 @@ const jsonLd = {
     postalCode: site.address.zip,
     addressCountry: "BR",
   },
-  openingHours: ["Mo-Fr 07:00-18:00", "Sa 07:00-12:00"],
+  openingHours: site.hours.map((h) => h.schema),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -14,7 +14,7 @@ export default function Contact() {
             <p className="font-semibold text-slate-900">Endereço</p>
             <p>{street}, {city} - {region}, {zip}</p>
             <p className="mt-3 font-semibold text-slate-900">Telefone</p>
-            <a href={`tel:+${site.whatsapp}`} className="hover:text-brand-600">{site.phone}</a>
+            <a href={`tel:+${site.whatsapp}`} className="hover:text-brand-700">{site.phone}</a>
           </address>
           <div>
             <p className="font-semibold text-slate-900">Horários</p>

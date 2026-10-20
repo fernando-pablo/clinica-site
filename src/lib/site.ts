@@ -9,9 +9,11 @@ export const site = {
   whatsapp: "5574999990000", // formato internacional, só números
   email: "contato@clinicaexemplo.com.br",
   address: { street: "Rua das Flores, 123", city: "Sua Cidade", region: "BA", zip: "44000-000" },
+  // `days` e `time` aparecem no site. `schema` vai para os dados estruturados do Google
+  // (dias em inglês abreviados: Mo, Tu, We, Th, Fr, Sa, Su). Ao mudar um horário, mude os dois na mesma linha.
   hours: [
-    { days: "Segunda a sexta", time: "07h às 18h" },
-    { days: "Sábado", time: "07h às 12h" },
+    { days: "Segunda a sexta", time: "07h às 18h", schema: "Mo-Fr 07:00-18:00" },
+    { days: "Sábado", time: "07h às 12h", schema: "Sa 07:00-12:00" },
   ],
   services: [
     { title: "Clínico geral", text: "Consultas de rotina, check-up e acompanhamento contínuo.", icon: "🩺" },

@@ -11,7 +11,7 @@ export default function Hero() {
         <p className="mt-6 max-w-2xl text-lg text-slate-600">{site.description}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a href={whatsappLink()} target="_blank" rel="noopener noreferrer"
-             className="rounded-full bg-brand-600 px-6 py-3 font-semibold text-white shadow hover:bg-brand-700">
+             className="rounded-full bg-brand-700 px-6 py-3 font-semibold text-white shadow hover:bg-brand-800">
             Agendar pelo WhatsApp
           </a>
           <a href="#servicos"

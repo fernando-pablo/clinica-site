@@ -13,7 +13,8 @@ export default function ContactForm() {
     window.open(whatsappLink(text), "_blank", "noopener,noreferrer");
   }
 
-  const field = "mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-500 focus:outline-none";
+  const field =
+    "mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/30";
 
   return (
     <form onSubmit={submit} className="space-y-4">
@@ -25,7 +26,7 @@ export default function ContactForm() {
         Como podemos ajudar?
         <textarea required rows={4} value={msg} onChange={(e) => setMsg(e.target.value)} className={field} />
       </label>
-      <button className="w-full rounded-full bg-brand-600 py-3 font-semibold text-white hover:bg-brand-700">
+      <button className="w-full rounded-full bg-brand-700 py-3 font-semibold text-white hover:bg-brand-800">
         Enviar pelo WhatsApp
       </button>
     </form>
