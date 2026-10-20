@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme {
+  --color-brand-50: #ecfdf5;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
