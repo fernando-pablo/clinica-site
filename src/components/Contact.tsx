@@ -1,5 +1,6 @@
 import Section from "./Section";
 import ContactForm from "./ContactForm";
+import MapEmbed from "./MapEmbed";
 import { site } from "@/lib/site";
 
 export default function Contact() {
@@ -23,8 +24,7 @@ export default function Contact() {
             </ul>
           </div>
         </div>
-        <iframe title="Mapa da clínica" loading="lazy" className="h-80 w-full rounded-2xl border-0 lg:h-full"
-          src={`https://www.google.com/maps?q=${q}&output=embed`} />
+        <MapEmbed query={q} address={`${street}, ${city} - ${region}`} />
       </div>
     </Section>
   );

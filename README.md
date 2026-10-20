@@ -42,6 +42,9 @@ src/
 - **Server Components por padrão.** Só o `ContactForm` e o `MobileMenu` são Client Components, porque
   são os únicos com estado e eventos. O resto vai pronto do servidor, com menos JavaScript no navegador.
 - **Sem backend.** O formulário monta a mensagem e abre o WhatsApp, o canal que a clínica já usa.
+- **Mapa sob demanda.** O mapa incorporado do Google carregava cerca de 410 KiB de JavaScript e
+  derrubava a nota de desempenho no celular. Agora aparece uma prévia leve com "Ver mapa" e
+  "Abrir no Google Maps", e o mapa só carrega depois do clique (o que também é melhor para a privacidade).
 
 ## Limitações conhecidas
 - Sem testes automatizados.
